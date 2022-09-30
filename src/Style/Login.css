@@ -1,0 +1,471 @@
+body.test{
+    background-color: #1d90bd;
+}
+
+/* CONTENEDOR FOMULARIOS INICIO DE SECCION Y REGISTRO */
+
+.container-forms {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    padding: 2% 5% 2.85% 2%;
+    user-select: none;
+}
+
+
+/* CONTENERDOR BOTON DE REGRESO A INICIO */
+
+.container-btn-inicio {
+    width: 100%;
+    margin-bottom: 1%;
+    z-index: 1000;
+}
+
+.bunttonr-inicio {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background-color: white;
+    border: 2px solid #ffba01;
+    color: black;
+    font-size: 18px;
+    line-height: 1;
+    height: 100%;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    animation: regresoinicio 4s forwards infinite;
+}
+
+.bunttonr-inicio picture {
+    background-color: white;
+    border-radius: 50px;
+    padding: 15px;
+    display: flex;
+    align-content: center;
+}
+
+.nombreinicio {
+    margin: 0px 15px 0px 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.bunttonr-inicio:hover {
+    background-color: #ffba01;
+    color: white;
+    border: 2px solid white;
+}
+
+.nombreinicio {
+    color: black;
+}
+
+@keyframes regresoinicio {
+    40% {
+        transform: translatex(50px);
+    }
+}
+
+
+/* FORMULARIO DE INICIO DE SECCIÓN  */
+
+.container-inicio-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 55%;
+    height: 42%;
+    padding: 2% 1%;
+    z-index: 1000;
+}
+
+.titulo-inicio-sesion {
+    font-size: 30px;
+    color: white;
+}
+
+.subtitulo-inicio-sesion {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 0.7rem;
+    width: 100%;
+    color: white;
+}
+
+.input-btn-enviar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.input-iniciar-sesión {
+    padding: 0.6rem 1.3rem;
+    background-color: white;
+    border: 2px solid white;
+    color: #585858;
+    font-size: 18px;
+    line-height: 1;
+    margin-top: 1.2rem;
+    margin-bottom: 4%;
+    height: 60%;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.input-iniciar-sesión:hover {
+    background-color: #ffba01;
+    color: white;
+}
+
+.formulario-inicio-sesion {
+    display: none;
+    flex-flow: row wrap;
+    justify-content: center;
+    position: absolute;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.753);
+    width: 28%;
+    height: 38%;
+    padding: 2% 3%;
+    top: 49%;
+    left: 13.5%;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.Show {
+    display: flex;
+    animation: SHOW 1s forwards;
+}
+
+@keyframes SHOW {
+    0% {
+        height: 0%;
+    }
+
+    100% {
+        height: 38%;
+    }
+}
+
+.text-input,
+.password-input {
+    width: 100%;
+    height: 24%;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    animation: text 1s forwards;
+}
+
+@keyframes text {
+    0% {
+        opacity: 0%;
+        transform: translateX(-80px);
+    }
+
+    35% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 3%;
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateX(0);
+    }
+}
+
+.text-input,
+.password-input,
+ ::placeholder {
+    color: rgba(255, 255, 255, 0.938);
+    font-size: 14px;
+}
+
+.entrar-input {
+    padding: 0.6rem 1.3rem;
+    background-color: white;
+    border: 2px solid white;
+    color: #585858;
+    font-size: 14px;
+    line-height: 1.2;
+    margin-top: 1.5rem;
+    height: 22%;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    animation: button 1s forwards;
+}
+
+@keyframes button {
+    0% {
+        opacity: 0%;
+        transform: translateX(-80px);
+    }
+
+    35% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 2%;
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateX(0);
+    }
+}
+
+.entrar-input:hover {
+    background-color: transparent;
+    color: white;
+}
+
+
+/* FORMULARIO DE REGISTRO */
+
+.container-registro {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.753);
+    border-radius: 1.5rem;
+    width: 38%;
+    height: 500px;
+    padding: 2%;
+    z-index: 1000;
+}
+
+.titulo-registro {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 90%;
+    height: 15;
+    font-size: 30px;
+    color: white;
+}
+
+.iconos-redes {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 5%;
+    padding: 0% 10%;
+}
+
+.iconos-redes a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    background-image: radial-gradient( circle at 85.36% -11.24%, #ffda74 0, #fdd567 25%, #fdc938 50%, #ffc31e 75%, #ffba01 100%);
+    margin-right: 0.5rem;
+    transition: 0.3s;
+}
+
+.iconos-redes a:hover {
+    transform: scale(1.05);
+}
+
+.iconos-redes img {
+    width: 70%;
+    height: 70%;
+}
+
+.subtitulo-registro {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 10%;
+    font-size: 18px;
+    color: white;
+}
+
+.inputs-form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 90%;
+}
+
+.input-name,
+.input-email,
+.input-password {
+    width: 100%;
+    height: 20%;
+    padding: 0.6rem 1.3rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.input-name,
+.input-email,
+.input-password,
+ ::placeholder {
+    color: rgba(255, 255, 255, 0.938);
+    font-size: 14px;
+}
+
+.input-enviar {
+    padding: 0.6rem 1.3rem;
+    background-color: white;
+    border: 2px solid white;
+    color: #585858;
+    font-size: 14px;
+    line-height: 1;
+    margin-top: 2rem;
+    height: 20%;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.input-enviar:hover {
+    background-color: transparent;
+    color: white;
+}
+
+
+/* BORBIJAS DE FONDO */
+
+.borbujas-fondo {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.borbujas-fondo div {
+    width: 20px;
+    height: 20px;
+    box-shadow: 10px 10px 30px rgb(245, 255, 104) inset;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 1%;
+    animation: bobujas 4s linear infinite;
+}
+
+.borbujas-fondo div:nth-child(1) {
+    width: 42px;
+    height: 42px;
+    left: 2%;
+    box-shadow: 10px 10px 30px rgba(247, 247, 255, 0.637) inset;
+    animation-duration: 7s;
+}
+
+.borbujas-fondo div:nth-child(2) {
+    width: 80px;
+    height: 80px;
+    left: 10%;
+    box-shadow: 10px 10px 30px rgba(0, 255, 149, 0.932) inset;
+    animation-duration: 5s;
+}
+
+.borbujas-fondo div:nth-child(3) {
+    width: 55px;
+    height: 55px;
+    left: 22%;
+    box-shadow: 10px 10px 20px rgba(247, 247, 255, 0.637) inset;
+    animation-duration: 9.5s;
+}
+
+.borbujas-fondo div:nth-child(4) {
+    width: 74px;
+    height: 74px;
+    left: 30%;
+    animation-duration: 6s;
+}
+
+.borbujas-fondo div:nth-child(5) {
+    width: 61px;
+    height: 61px;
+    left: 45%;
+    box-shadow: 10px 10px 30px rgba(115, 255, 0, 0.637) inset;
+    animation-duration: 10s;
+}
+
+.borbujas-fondo div:nth-child(6) {
+    width: 45px;
+    height: 45px;
+    left: 52%;
+    animation-duration: 8s;
+}
+
+.borbujas-fondo div:nth-child(7) {
+    width: 64px;
+    height: 64px;
+    left: 67%;
+    box-shadow: 10px 10px 30px rgba(247, 247, 255, 0.637) inset;
+    animation-duration: 5.5s;
+}
+
+.borbujas-fondo div:nth-child(8) {
+    width: 58px;
+    height: 58px;
+    left: 78%;
+    box-shadow: 10px 10px 20px rgba(0, 255, 149, 0.932) inset;
+    animation-duration: 9s;
+}
+
+.borbujas-fondo div:nth-child(9) {
+    width: 46px;
+    height: 46px;
+    left: 87%;
+    animation-duration: 11s;
+}
+
+.borbujas-fondo div:nth-child(10) {
+    width: 50px;
+    height: 50px;
+    left: 95%;
+    box-shadow: 0px 10px 30px rgba(115, 255, 0, 0.637) inset;
+    animation-duration: 4s;
+}
+
+@keyframes bobujas {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    3% {
+        width: 30px;
+        height: 30px;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        bottom: 100vh;
+        transform: rotate(180deg);
+    }
+}

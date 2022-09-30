@@ -1,0 +1,108 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-color: rgba(233, 232, 232, 0.418);
+}
+
+.about .space {
+  width: 100px;
+  height: 5px;
+  transform: translateY(-24rem);
+}
+
+.about .flex {
+  background-color: #005e77;
+  margin: 0rem 3rem;
+  border-radius: 2rem;
+}
+
+.info-about {
+  flex-basis: 50%;
+  padding-top: 4rem;
+  margin-left: 2rem;
+}
+
+.info-about h1 {
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #ffba01;
+  font-size: 42px;
+  color: white;
+}
+
+.info-about p {
+  color: rgba(255, 255, 255, 0.678);
+}
+
+.photo-about {
+  flex-basis: 40%;
+  background-image: url("../statics/images/escritorio.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 60vh;
+  border-radius: 2rem;
+  border-bottom-left-radius: 0;
+  margin-left: 2rem;
+}
+
+@media (max-width: 600px) {
+  .about .space {
+    transform: translateY(-28rem);
+  }
+  .about {
+    display: flex;
+    flex-flow: row;
+    height: 800px;
+  }
+
+  .about .flex {
+    height: 60vh;
+    width: 40vh;
+    position: absolute;
+    margin: 0;
+  }
+
+  .photo-about {
+    order: 1;
+    position: relative;
+    top: -17vh;
+    flex-basis: 80%;
+  }
+
+  .info-about {
+    order: 2;
+    padding-top: 0rem;
+    position: relative;
+    top: -35vh;
+    flex-basis: 100%;
+  }
+
+  .info-about h1 {
+    font-size: 26px;
+    width: 80%;
+  }
+
+  .info-about p {
+    font-size: 14px;
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .about .space {
+    transform: translateY(-36rem);
+  }
+  .about {
+    height: 800px;
+  }
+  .info-about h1 {
+    font-size: 62px;
+    margin-top: 5%;
+    border-bottom: 4px solid #ffba01;
+  }
+  .info-about p {
+    font-size: 20px;
+  }
+}

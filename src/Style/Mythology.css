@@ -1,0 +1,232 @@
+.Mitologias {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: flex-end;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 20vh;
+  background-color: aliceblue;
+}
+
+.container-information {
+  background-color: #29abe2;
+  padding-top: 15vh;
+  height: 100vh;
+  position: relative;
+  display: flex;
+}
+
+.Mitologias picture {
+  flex-basis: 40%;
+  padding-left: 2rem;
+}
+
+.Mitologias article {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.container-information .swiper {
+  width: 500px;
+  height: 500px;
+}
+
+.container-information .swiper-slide {
+  background-position: top;
+  background-size: cover;
+}
+
+.container-information .swiper .swiper-pagination-bullet {
+  width: 11px !important;
+  height: 11px !important;
+}
+
+.container-information .img-information {
+  display: block;
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  border: #3f3f3f 5px solid;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+#God-animation-1,
+#God-animation-2,
+#God-animation-3,
+#God-animation-4,
+#God-animation-5 {
+  width: 500px;
+  height: 400px;
+  position: absolute;
+}
+
+#page-1 {
+  background-color: rgb(230, 230, 230);
+  background-size: 500px 400px;
+  background-position: -15px 0px;
+  overflow: hidden;
+  position: relative;
+}
+
+#page-2 {
+  background-image: url("../statics/images/Cronos_portada.jpg");
+  background-size: 500px 400px;
+  background-position: -15px 0px;
+}
+
+.container-information .card-information {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card-information picture {
+  flex-basis: 100%;
+  height: 400px;
+  background-size: cover;
+}
+
+.link-information {
+  background-color: #3f3f3f;
+  height: 100px;
+  cursor: pointer;
+  flex-basis: 100%;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  text-align: center;
+  padding-top: 6px;
+  text-decoration: none;
+}
+
+.information-text {
+  color: white;
+  font-size: 28px;
+}
+
+.information-text:active {
+  color: white;
+}
+
+.container-information .swiper-pagination-bullet-active {
+  background-color: white !important;
+}
+
+.Mitologias .link-page {
+  color: #29abe2;
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 700;
+  margin-left: 8rem;
+  margin-top: 2rem;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .container-information .swiper {
+    display: none;
+  }
+
+  .Mitologias picture {
+    position: absolute;
+    top: 20px;
+    left: -20px;
+  }
+
+  .link-page {
+    margin-top: -7rem;
+    margin-left: 12rem;
+  }
+  .mobile {
+    display: unset;
+    width: 80%;
+    text-align: center;
+    color: white;
+    font-size: 26px;
+    position: absolute;
+    top: 40vh;
+    z-index: 1;
+    margin-left: 1.5rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container-information .swiper {
+    width: 700px;
+    height: 720px;
+  }
+
+  .container-information .img-information {
+    width: 700px;
+    height: 550px;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+  }
+
+  .card-information picture {
+    height: 550px;
+  }
+
+  .link-information {
+    height: 170px;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
+
+  .information-text {
+    font-size: 38px;
+    margin-top: 1rem;
+  }
+
+  #page-1 {
+    background-size: 750px 600px;
+    background-position: -35px -30px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  #page-2 {
+    background-size: 750px 600px;
+    background-position: -35px -20px;
+  }
+
+  #God-animation-1,
+  #God-animation-2,
+  #God-animation-3,
+  #God-animation-4,
+  #God-animation-5 {
+    width: 750px;
+    height: 600px;
+    position: absolute;
+  }
+
+  #God-animation-2 {
+    left: -2rem;
+    top: -2rem;
+  }
+
+  #God-animation-3 {
+    left: -2rem;
+  }
+
+
+  .Mitologias .link-page {
+    font-size: 48px;
+    margin-top: 4rem;
+  }
+
+  .Mitologias picture {
+    margin-left: 2rem;
+  }
+
+  .Mitologias picture img {
+    height: 160px;
+    width: 160px;
+  }
+}

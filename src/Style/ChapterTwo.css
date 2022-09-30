@@ -1,0 +1,734 @@
+.Escena-2 {
+  width: 90%;
+  height: 90vh;
+  display: flex;
+  flex-flow: row wrap;
+  overflow: hidden;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  position: absolute;
+  right: 50px;
+  border: var(--border-comic);
+  box-shadow: 3px 20px 30px 20px #000000;
+}
+
+.Chapter-two {
+  background-image: url("../statics/images/background-comic.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Chapter-two .swiper {
+  width: 100%;
+  height: 100vh;
+}
+
+.Chapter-two .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+}
+
+/* contenedores de las animaciones */
+
+#lottie-21 {
+  height: 120vh;
+  width: 1000px;
+  position: absolute;
+  left: -380px;
+  top: -100px;
+  z-index: 1;
+}
+
+#lottie-22 {
+  height: 55vh;
+  width: 1080px;
+  position: absolute;
+  left: -235px;
+  top: 0px;
+  z-index: 1;
+}
+
+#lottie-23 {
+  height: 55vh;
+  width: 1080px;
+  position: absolute;
+  left: -235px;
+  top: 0px;
+  z-index: 1;
+}
+
+#lottie-24 {
+  height: 55vh;
+  width: 1080px;
+  position: absolute;
+  left: -235px;
+  top: 0px;
+  z-index: 1;
+}
+
+#lottie-25 {
+  height: 75vh;
+  width: 1080px;
+  position: absolute;
+  left: -395px;
+  top: -140px;
+  z-index: 1;
+}
+
+#lottie-26 {
+  height: 100vh;
+  width: 1080px;
+  position: absolute;
+  left: -345px;
+  top: -60px;
+  z-index: 1;
+}
+
+#lottie-27 {
+  height: 90vh;
+  width: 1000px;
+  position: absolute;
+  left: 0px;
+  top: -10px;
+  z-index: 1;
+}
+
+#lottie-28 {
+  height: 100vh;
+  width: 1080px;
+  position: absolute;
+  left: -345px;
+  top: -30px;
+  z-index: 1;
+}
+
+#lottie-29 {
+  height: 100vh;
+  width: 1080px;
+  position: absolute;
+  left: -345px;
+  top: -60px;
+  z-index: 1;
+}
+
+#lottie-30 {
+  height: 55vh;
+  width: 1080px;
+  position: absolute;
+  left: -235px;
+  top: -30px;
+  z-index: 1;
+}
+
+#lottie-31 {
+  height: 55vh;
+  width: 1080px;
+  position: absolute;
+  left: -235px;
+  top: -10px;
+  z-index: 1;
+}
+
+#lottie-32 {
+  height: 55vh;
+  width: 1200px;
+  position: absolute;
+  left: -295px;
+  top: -60px;
+  z-index: 1;
+}
+
+#lottie-33 {
+  height: 65vh;
+  width: 1200px;
+  position: absolute;
+  left: -245px;
+  top: -60px;
+  z-index: 1;
+}
+
+#lottie-34 {
+  height: 100vh;
+  width: 1080px;
+  position: absolute;
+  left: -365px;
+  top: -60px;
+  z-index: 1;
+}
+
+#lottie-35 {
+  height: 100vh;
+  width: 1200px;
+  position: absolute;
+  left: -380px;
+  top: -50px;
+  z-index: 1;
+}
+
+#lottie-36 {
+  height: 90vh;
+  width: 1200px;
+  position: absolute;
+  left: -385px;
+  top: 0px;
+  z-index: 1;
+}
+
+#lottie-37 {
+  height: 120vh;
+  width: 1800px;
+  position: absolute;
+  left: -250px;
+  top: -80px;
+  z-index: 1;
+}
+
+#lottie-38 {
+  height: 90vh;
+  width: 1600px;
+  position: absolute;
+  left: -620px;
+  top: 0px;
+  z-index: 1;
+}
+
+#lottie-39 {
+  height: 90vh;
+  width: 1600px;
+  position: absolute;
+  left: -550px;
+  top: 0px;
+  z-index: 1;
+}
+
+#lottie-40 {
+  height: 90vh;
+  width: 1200px;
+  position: absolute;
+  left: -420px;
+  top: -1px;
+  z-index: 1;
+}
+
+#lottie-41 {
+  height: 65vh;
+  width: 1080px;
+  position: absolute;
+  left: -250px;
+  top: -130px;
+  z-index: 1;
+}
+
+#lottie-42 {
+  height: 55vh;
+  width: 1080px;
+  position: absolute;
+  left: -236px;
+  top: -40px;
+  z-index: 1;
+}
+
+#lottie-43 {
+  height: 120vh;
+  width: 1800px;
+  position: absolute;
+  left: -250px;
+  top: -80px;
+  z-index: 1;
+}
+/* maquetado de escenas */
+
+/* viñeta 1 */
+.box-22 {
+  width: 50%;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+  border-right: var(--border-comic);
+}
+
+.box-23 {
+  width: 100%;
+  height: 45vh;
+  position: relative;
+  overflow: hidden;
+  border-bottom: var(--border-comic);
+}
+
+.box-24 {
+  width: 100%;
+  height: 45vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* viñeta 2 */
+
+.box-25 {
+  width: 100%;
+  height: 45vh;
+  position: relative;
+  overflow: hidden;
+  border-bottom: var(--border-comic);
+}
+
+.box-26 {
+  width: 100%;
+  height: 45vh;
+  position: relative;
+  overflow: hidden;
+  background-image: url("../statics/images/fondo-3.png");
+  background-size: 800px 400px;
+  background-position: 0px -50px;
+  background-repeat: no-repeat;
+}
+
+.box-27 {
+  width: 50%;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+  border-left: var(--border-comic);
+}
+
+/* viñeta 3 */
+
+.box-28 {
+  width: 50%;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.box-29 {
+  width: 50%;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+  border-left: var(--border-comic);
+}
+
+/* viñeta 4 */
+
+.box-30 {
+  width: 50%;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+  border-right: var(--border-comic);
+}
+
+.box-31 {
+  width: 100%;
+  height: 45vh;
+  position: relative;
+  overflow: hidden;
+  border-bottom: var(--border-comic);
+}
+
+.box-32 {
+  width: 100%;
+  height: 45vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* viñeta 5 */
+
+.box-33 {
+  width: 100%;
+  height: 45vh;
+  position: relative;
+  overflow: hidden;
+  border-bottom: var(--border-comic);
+}
+
+.box-34 {
+  width: 100%;
+  height: 45vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.box-35 {
+  width: 50%;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+  border-left: var(--border-comic);
+}
+
+.box-36 {
+  width: 50%;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.box-37 {
+  width: 50%;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+  border-left: var(--border-comic);
+}
+
+.box-38 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.box-39 {
+  width: 50%;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+  border-right: var(--border-comic);
+}
+
+.box-40 {
+  width: 50%;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.box-41 {
+  width: 50%;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+  border-right: var(--border-comic);
+}
+
+.box-42 {
+  width: 100%;
+  height: 45vh;
+  position: relative;
+  overflow: hidden;
+  border-bottom: var(--border-comic);
+}
+
+.box-43 {
+  width: 100%;
+  height: 45vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.box-44 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* sonidos */
+
+.sound-column {
+  background-color: transparent;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  z-index: 1000;
+  margin: 0px -7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.help-column {
+  background-color: transparent;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  z-index: 1000;
+  margin: 0px -7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.sound-column img,
+.sound-column--modified img,
+.sound-column--modified2 img,
+.help-column img,
+.onda {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  background-color: transparent;
+  transition: 0.5s ease-in;
+}
+
+.sound-column img,
+.sound-column--modified img,
+.sound-column--modified2 img {
+  opacity: 0;
+}
+
+.sound-column img:hover,
+.sound-column--modified img:hover,
+.sound-column--modified2 img:hover {
+  background-color: white;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.onda:hover::after {
+  animation: none;
+}
+
+.onda::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 6px solid #ffba01;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+.sound-column--modified {
+  background-color: transparent;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+  margin: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sound-column--modified2 {
+  background-color: transparent;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+  margin: 100px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1920px) {
+  .Escena-2 {
+    width: 94%;
+  }
+
+  .Chapter-two .swiper {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 1rem;
+  }
+
+  #lottie-21 {
+    height: 100vh;
+    width: 1800px;
+    left: -540px;
+    top: -30px;
+  }
+
+  #lottie-22 {
+    height: 60vh;
+    width: 1800px;
+    left: -440px;
+    top: -10px;
+  }
+
+  #lottie-23 {
+    height: 60vh;
+    width: 1800px;
+    left: -440px;
+    top: -10px;
+  }
+
+  #lottie-24 {
+    height: 60vh;
+    width: 1800px;
+    left: -440px;
+    top: -10px;
+  }
+
+  #lottie-25 {
+    height: 80vh;
+    width: 1800px;
+    left: -640px;
+    top: -150px;
+  }
+
+  .box-26 {
+    background-size: 1200px;
+    background-position: 0px -100px;
+  }
+
+  #lottie-26 {
+    height: 100vh;
+    width: 1800px;
+    left: -600px;
+    top: -30px;
+  }
+
+  #lottie-27 {
+    height: 100vh;
+    width: 1800px;
+    left: -80px;
+    top: -30px;
+  }
+
+  #lottie-28 {
+    height: 100vh;
+    width: 1800px;
+    left: -600px;
+    top: -30px;
+  }
+
+  #lottie-29 {
+    height: 100vh;
+    width: 1800px;
+    left: -600px;
+    top: -30px;
+  }
+
+  #lottie-30 {
+    height: 60vh;
+    width: 1800px;
+    left: -440px;
+    top: -30px;
+  }
+
+  #lottie-31 {
+    height: 60vh;
+    width: 1800px;
+    left: -440px;
+    top: -30px;
+  }
+
+  #lottie-32 {
+    height: 65vh;
+    width: 1800px;
+    left: -380px;
+    top: -120px;
+  }
+
+  #lottie-33 {
+    height: 80vh;
+    width: 1800px;
+    left: -300px;
+    top: -160px;
+  }
+
+  #lottie-34 {
+    height: 100vh;
+    width: 1800px;
+    left: -600px;
+    top: -30px;
+  }
+
+  #lottie-35 {
+    height: 100vh;
+    width: 1800px;
+    left: -600px;
+    top: -30px;
+  }
+
+  #lottie-36 {
+    height: 100vh;
+    width: 1800px;
+    left: -600px;
+    top: -30px;
+  }
+
+  #lottie-37 {
+    height: 180vh;
+    width: 2000px;
+    left: 0px;
+    top: -400px;
+  }
+
+  #lottie-38 {
+    height: 120vh;
+    width: 1500px;
+    left: -500px;
+    top: -140px;
+  }
+
+  #lottie-39 {
+    height: 100vh;
+    width: 1800px;
+    left: -400px;
+    top: -30px;
+  }
+
+  #lottie-40 {
+    height: 100vh;
+    width: 1800px;
+    left: -400px;
+    top: -30px;
+  }
+
+  #lottie-41 {
+    height: 60vh;
+    width: 1800px;
+    left: -440px;
+    top: -100px;
+  }
+
+  #lottie-42 {
+    height: 60vh;
+    width: 1800px;
+    left: -440px;
+    top: -50px;
+  }
+
+  #lottie-43 {
+    height: 180vh;
+    width: 2000px;
+    left: -80px;
+    top: -400px;
+  }
+
+  .sound-column img,
+  .sound-column--modified img,
+  .sound-column--modified2 img,
+  .help-column img,
+  .onda {
+    width: 80px;
+    height: 80px;
+  }
+
+  .sound-column {
+    margin: 15px 10px;
+  }
+
+  .sound-column--modified {
+    margin: 45px 35px;
+  }
+
+  .sound-column--modified2 {
+    margin: 145px 55px;
+  }
+}

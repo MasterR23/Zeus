@@ -1,0 +1,201 @@
+.Chapters {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: flex-end;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 20vh;
+  background-color: aliceblue;
+}
+
+.container-chapter {
+  background-color: #29abe2;
+  padding-top: 15vh;
+  height: 100vh;
+  position: relative;
+  display: flex;
+}
+
+.Chapters picture {
+  flex-basis: 40%;
+  padding-left: 2rem;
+}
+
+.Chapters article {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.container-chapter .swiper {
+  width: 500px;
+  height: 500px;
+}
+
+.container-chapter .swiper-slide {
+  background-position: top;
+  background-size: cover;
+}
+
+.container-chapter .swiper .swiper-pagination-bullet {
+  width: 11px !important;
+  height: 11px !important;
+}
+
+.container-chapter .img-chapter {
+  display: block;
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  border: #ffba01 5px solid;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.container-chapter #page-1 {
+  background-image: url("../statics/images/portada_rea.jpg");
+  background-size: 500px 400px;
+  background-position: -15px 0px;
+}
+
+.container-chapter #page-2 {
+  background-image: url("../statics/images/Cronos_portada.jpg");
+  background-size: 500px 400px;
+  background-position: -15px 0px;
+}
+
+.container-chapter .card-chapter {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.container-chapter .card-chapter p {
+  color: black;
+}
+
+.card-chapter picture {
+  flex-basis: 100%;
+  height: 400px;
+  background-size: cover;
+}
+
+.container-chapter .link-episiodios {
+  background-color: #ffba01;
+  height: 100px;
+  cursor: pointer;
+  flex-basis: 100%;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  text-align: center;
+  padding-top: 1px;
+  text-decoration: none;
+}
+
+.chapter-text {
+  color: black;
+}
+
+.chapter-text:active {
+  color: white;
+}
+
+.container-chapter .swiper-pagination-bullet-active {
+  background-color: black !important;
+}
+
+.container-chapter .link-page {
+  color: #ffba01;
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 700;
+  margin-left: 8rem;
+  margin-top: 2rem;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .container-chapter .swiper {
+    display: none;
+  }
+
+  .Chapters picture {
+    position: absolute;
+    top: 20px;
+    left: -20px;
+  }
+
+  .link-page {
+    margin-top: -7rem;
+    margin-left: 12rem;
+  }
+  .mobile {
+    display: unset;
+    width: 80%;
+    text-align: center;
+    color: white;
+    font-size: 26px;
+    position: absolute;
+    top: 40vh;
+    z-index: 1;
+    margin-left: 1.5rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container-chapter .swiper {
+    width: 700px;
+    height: 720px;
+  }
+
+  .container-chapter .img-chapter {
+    width: 700px;
+    height: 550px;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+  }
+
+  .card-chapter picture {
+    height: 550px;
+  }
+
+  .container-chapter .link-episiodios {
+    height: 170px;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
+
+  .chapter-text {
+    font-size: 28px;
+    margin-top: 1rem;
+  }
+
+  .container-chapter #page-1 {
+    background-size: 750px 600px;
+    background-position: -35px -30px;
+  }
+
+  .container-chapter #page-2 {
+    background-size: 750px 600px;
+    background-position: -35px -20px;
+  }
+
+  .container-chapter .link-page {
+    font-size: 48px;
+    margin-top: 4rem;
+  }
+
+  .Chapters picture {
+    margin-left: 2rem;
+  }
+
+  .Chapters picture img {
+    height: 160px;
+    width: 160px;
+  }
+}

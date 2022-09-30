@@ -1,0 +1,137 @@
+.Information {
+  background-color: rgba(228, 228, 228, 0.418);
+  padding: 2rem 0rem;
+}
+
+.card-info .enter {
+  background-color: #29abe2;
+}
+
+.link-mitologia {
+  margin: 0rem 1rem;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+}
+
+.card-info .enter .iconEnter {
+  width: 50px;
+}
+
+.card-info .enter picture {
+  border-color: #29abe2;
+}
+
+.container-card-info {
+  width: 70%;
+  border-radius: 2rem;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  border: #29abe2 4px solid;
+}
+
+.card-info {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 75vh;
+  border-radius: 2rem;
+  overflow: hidden;
+  z-index: 10;
+}
+
+#page-info {
+  position: absolute;
+  left: -30px;
+  width: 1000px;
+  height: 80vh;
+}
+
+.text-information {
+  flex-basis: 50%;
+  padding: 4rem 3rem;
+  z-index: 12;
+}
+
+.text-information h1 {
+  margin-bottom: 1rem;
+}
+
+.picture-information {
+  flex-basis: 50%;
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  .card-info {
+    height: 90vh;
+  }
+
+  #page-info {
+    display: none;
+  }
+
+  #page-info-mobile {
+    width: 500px;
+    height: 50vh;
+    position: absolute;
+    top: -60px;
+    left: -200px;
+  }
+
+  .text-information {
+    flex-basis: 100%;
+    padding-top: 35vh;
+  }
+
+  .picture-information {
+    flex-basis: 100%;
+  }
+
+  .container-card-info {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1920px) {
+  #page-info {
+    width: 1800px;
+    height: 80vh;
+    left: -180px;
+  }
+
+  .text-information h1 {
+    margin-top: 6rem;
+    font-size: 40px;
+  }
+
+  .text-information p {
+    font-size: 20px;
+  }
+
+  .card-info .enter .iconEnter {
+    width: 80px;
+  }
+
+  .card-info .enter {
+    width: 18vw;
+  }
+
+  .card-info .enter .link-comic {
+    margin: 0px 2rem;
+  }
+
+  .Information .title-section {
+    font-size: 62px;
+  }
+
+  .Information h5 {
+    font-size: 20px;
+  }
+
+  .link-mitologia {
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,339 @@
+.reviews-section {
+    width: 100%;
+    height: 660px;
+    padding-top: 2rem;
+    background-color: rgba(228, 228, 228, 0.418);
+    /* background-image: linear-gradient(160deg, #ffba01 50%, white 50%); */
+}
+
+.reviews-section h5 {
+    text-align: center;
+    color: rgba(128, 128, 128, 0.39)
+}
+
+
+/* CARTAS DE RESEÑAS */
+
+.contenerdor-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap row;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 5%;
+    user-select: none;
+}
+
+
+/* APARTADO FOTO */
+
+.head {
+    width: 100%;
+    height: 125px;
+    position: relative;
+}
+
+.circulo {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #ffba01;
+    bottom: 0%;
+}
+
+.img {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    bottom: -30%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* APARTADO INFO */
+
+.description {
+    height: 200px;
+    padding: 40px 20px 20px 20px;
+    text-align: justify;
+}
+
+.description h3 {
+    color: #ffba01;
+    text-align: center;
+}
+
+.description h4 {
+    color: black;
+    text-align: center;
+}
+
+.description p {
+    color: gray;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+
+/* APARTADO CALIFICACION */
+
+.calificacion {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 8%;
+    margin: 0% auto;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.calificacion img {
+    width: 100%;
+    margin: 10%;
+}
+
+
+/* ESTRUCTURA CARRUSEL  */
+
+.reviews-section .swiper {
+    display: flex;
+    flex-flow: wrap row;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background-color: transparent;
+}
+
+.reviews-section .swiper-slide {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.card-character1 {
+    cursor: pointer;
+    background-image: url("../statics/Character/Zeus.png");
+    background-size: 300px 408px;
+    opacity: 0;
+    position: absolute;
+    height: 408px;
+    width: 300px;
+    border-radius: 1rem;
+}
+
+.card-character2 {
+    cursor: pointer;
+    background-image: url("../statics/Character/Cronos.png");
+    background-size: 300px 408px;
+    background-color: #ffba01;
+    opacity: 0;
+    position: absolute;
+    height: 408px;
+    width: 300px;
+    border-radius: 1rem;
+}
+
+.card-character3 {
+    cursor: pointer;
+    background-image: url("../statics/Character/Rea.png");
+    background-size: 300px 408px;
+    opacity: 0;
+    position: absolute;
+    height: 408px;
+    width: 300px;
+    border-radius: 1rem;
+}
+
+.card-character4 {
+    cursor: pointer;
+    background-image: url("../statics/Character/Ezio.png");
+    background-size: 300px 408px;
+    opacity: 0;
+    position: absolute;
+    height: 408px;
+    width: 300px;
+    border-radius: 1rem;
+}
+
+.card-character5 {
+    cursor: pointer;
+    background-image: url("../statics/Character/Amaltea.png");
+    background-size: 300px 408px;
+    opacity: 0;
+    position: absolute;
+    height: 408px;
+    width: 300px;
+    border-radius: 1rem;
+}
+
+.card-character6 {
+    cursor: pointer;
+    background-image: url("../statics/Character/Zeus-Joven.png");
+    background-size: 300px 408px;
+    opacity: 0;
+    position: absolute;
+    height: 408px;
+    width: 300px;
+    border-radius: 1rem;
+}
+
+.card-character7 {
+    cursor: pointer;
+    background-image: url("../statics/Character/Espectro.png");
+    background-size: 300px 408px;
+    opacity: 0;
+    position: absolute;
+    height: 408px;
+    width: 300px;
+    border-radius: 1rem;
+}
+
+.show-img {
+    animation: Views 1s forwards;
+}
+
+@keyframes Views {
+    0% {
+        opacity: 0;
+        transform: scale(0) rotate(270deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+
+.hide-img {
+    animation: hides 1s forwards;
+}
+
+
+@keyframes hides {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100px) scale(0) rotate(-270deg);
+    }
+}
+
+@media (max-width: 600px) {
+    .reviews-section .space {
+        transform: translateY(-10.7rem);
+    }
+    .swiper-slide {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 1920px) {
+    .reviews-section .space {
+        transform: translateY(-12rem);
+    }
+
+    .reviews-section {
+        height: 810px;
+    }
+
+    .reviews-section h1 {
+        font-size: 62px;
+    }
+
+    .reviews-section h5 {
+        font-size: 20px;
+    }
+
+    .card {
+        width: 400px;
+        height: 500px;
+        border-radius: 20px;
+    }
+
+    .circulo {
+        position: absolute;
+        width: 400px;
+        height: 300px;
+        border-radius: 100%;
+    }
+
+    .img {
+        height: 170px;
+        width: 170px;
+        border-radius: 50%;
+        bottom: -50%;
+    }
+
+    .description {
+        height: 300px;
+        padding: 70px 20px 20px 20px;
+        text-align: justify;
+    }
+
+    .description h3 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .description h4 {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .description p {
+        font-size: 20px;
+    }
+
+    .card-character1,
+    .card-character2,
+    .card-character3,
+    .card-character4,
+    .card-character5,
+    .card-character6,
+    .card-character7 {
+        width: 400px;
+        height: 500px;
+        border-radius: 20px;
+        background-size: 400px 500px;
+    }
+
+    .reviews-section .swiper {
+        height: 600px;
+    }
+
+
+}

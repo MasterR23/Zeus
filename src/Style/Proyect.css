@@ -1,0 +1,123 @@
+.proyect {
+    height: 600px;
+    padding-top: 2rem;
+}
+
+.proyect h5 {
+    text-align: center;
+    color: rgba(128, 128, 128, 0.39);
+    margin-bottom: 3rem;
+}
+
+.info-comic,
+.info-content,
+.info-proyect {
+    flex-basis: 30%;
+    background-color: white;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.36);
+    padding: 1rem 15px;
+    border-radius: 1rem;
+    border: 3px solid #ffba01;
+}
+
+.info-comic h1,
+.info-content h1,
+.info-proyect h1 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.proyect p {
+    color: gray;
+    margin-bottom: 1rem;
+}
+
+.proyect .flex {
+    justify-content: space-evenly;
+}
+
+.info-content:hover .icon-content,
+.info-comic:hover .icon-comic,
+.info-proyect:hover .icon-proyect {
+    transform: rotatey(360deg);
+    transition: all 0.65s;
+}
+
+.circle {
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(197, 197, 197);
+    padding: 4px 0px;
+    border-radius: 2rem;
+    border: 3px solid #ffba01;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+    .proyect {
+        height: auto;
+    }
+    .info-comic,
+    .info-proyect,
+    .info-content {
+        flex-basis: 80%;
+        margin-bottom: 1rem;
+    }
+    .proyect p {
+        font-size: 14px;
+    }
+    .info-comic h1,
+    .info-content h1,
+    .info-proyect h1 {
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .proyect .space {
+        transform: translateY(-13rem);
+    }
+    .proyect {
+        height: 800px;
+    }
+    .proyect h1 {
+        font-size: 62px;
+    }
+    .proyect h5 {
+        font-size: 20px;
+        margin-bottom: 3%;
+    }
+    .info-comic,
+    .info-proyect,
+    .info-content {
+        flex-basis: 30%;
+        border: 5px solid #ffba01;
+        padding: 1rem 2rem;
+        box-shadow: 8px 8px 18px 8px rgba(0, 0, 0, 0.36);
+        height: 440px;
+    }
+    .info-comic h1,
+    .info-content h1,
+    .info-proyect h1 {
+        font-size: 40px;
+    }
+    .proyect p {
+        font-size: 20px;
+    }
+    .circle {
+        width: 90px;
+        height: 90px;
+        padding: 4px 0px;
+        border-radius: 100%;
+        border: 5px solid #ffba01;
+        margin-bottom: 2.5rem;
+        margin-top: 2rem;
+    }
+    .icon-comic,
+    .icon-content,
+    .icon-proyect {
+        width: 75px;
+    }
+}
